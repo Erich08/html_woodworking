@@ -134,4 +134,15 @@ if (currentSeconds === 0) {
 let timeDay = `Date: ${currentDay}, ${currentMonth} ${currentDate}. Time: ${currentHour}:${currentMinutes}:${currentSeconds}.`;
 
 document.querySelector("p").innerHTML = `${timeDay}`;
-console.log(timeDay);
+
+function bigImg(x) {
+  x.style.height = "400px";
+  x.style.width = "400px";
+}
+
+function normalImg(x) {
+  x.style.height = "200px";
+  x.style.width = "300px";
+}
+
+alert("Be sure to hover over the smaller images.");
