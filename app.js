@@ -24,3 +24,22 @@ function annoyingprompt() {
     alert("That is incorrect please try again.");
   }
 }
+
+function tableImages() {
+  let i = 0;
+  while (i === 0) {
+    let table = Number(
+      prompt("How many tables would you like to display? Max 5, min 1.")
+    );
+    if (Math.round(table) < 1 || Math.round(table) > 5 || Number.isNaN(table)) {
+      alert("Invalid answer, please try again.");
+    } else {
+      for (let ii = 0; ii < Math.round(table); ii++) {
+        document.write(
+          '<img src="https://i0.wp.com/decoratoo.com/wp-content/uploads/2018/12/DIY-Pallet-Projects-25.jpg?w=736&ssl=1" alt="dogbowl">'
+        );
+      }
+      i++;
+    }
+  }
+}
