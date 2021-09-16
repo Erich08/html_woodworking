@@ -10,12 +10,17 @@ function normalImg(x) {
   x.style.width = "300px";
 }
 
-function bestCoderEver() {
-  let bestCoder = prompt("Who is the best coder in the world? Hint: Erich");
-  let codeGod = "Erich";
-  if (codeGod.toLowerCase() === bestCoder) {
-    alert("That's correct! How did you know?");
-  } else if (codeGod.toLowerCase() != bestCoder) {
-    prompt("That is incorrect. Please try again. Hint: Erich.");
+function annoyingprompt() {
+  let coder = prompt("Who is the best coder? Hint: Erich.");
+  let bestCoder = "Erich";
+
+  while (bestCoder != coder) {
+    coder = prompt("Who is the best coder? Hint: Erich.");
+  }
+
+  if (bestCoder == coder) {
+    alert("That is correct! How did you know?");
+  } else if (bestCoder != coder) {
+    alert("That is incorrect please try again.");
   }
 }
